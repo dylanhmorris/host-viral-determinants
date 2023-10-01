@@ -1,0 +1,26 @@
+# python virtual env
+bin
+lib
+share
+pyvenv.cfg
+lib64
+
+# python
+__pycache__
+*.pyc
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# emacs
+*~
+*#
+.#*
+
+# heavy output files
+*.pickle
+
+# TeX
+*.tex
+*.sty

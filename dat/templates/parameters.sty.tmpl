@@ -1,0 +1,11 @@
+\usepackage[retain-unity-mantissa = false]{siunitx}
+
+\BLOCK{for item in envvars}
+\BLOCK{if item.isnum}
+\newcommand{\\VAR{item.name}}{\num{\VAR{item.value}}}
+
+\BLOCK{else}
+\newcommand{\\VAR{item.name}}{\VAR{item.value}}
+
+\BLOCK{endif}
+\BLOCK{endfor}
