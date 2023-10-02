@@ -29,7 +29,7 @@ It remains poorly understood how SARS-CoV-2 infection influences the physiologic
 ## Directories
 - ``src``: all code, including numerics and figure generation:
 - ``out``: mcmc output files
-- ``ms/figures`: figures from the manuscript
+- `ms/figures`: figures from the manuscript
 
 # Reproducing analysis
 
@@ -81,7 +81,7 @@ The simplest approach is simply to type ``make`` at the command line, which shou
 
 If you want to do things piecewise, typing ``make <path/to/filename>`` for any of the files present in the complete repository uploaded here should also work.
 
-By default, the pipeline runs 3  CMC chains for each fit, with 1000 warmup steps and 1000 sample draws per chain. It runs them in serial by default when run on a CPU, but may run them in parallel if GPU or TPU is available. You can reconfigure things in `src/config.py`, but note that this may affect reproducibility.
+By default, the pipeline runs 3 MCMC chains for each fit, with 1000 warmup steps and 1000 sample draws per chain. It runs them in serial by default when run on a CPU, but may run them in parallel if GPU or TPU is available. You can reconfigure things in `src/config.py`, but note that this may affect reproducibility.
 
 Some shortcuts are available:
 
